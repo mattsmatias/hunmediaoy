@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tietosuojaseloste – Hunmedia Oy</title>
+<meta name="description" content="Hunmedia Oy:n tietosuojaseloste: mitä henkilötietoja keräämme verkkosivuillamme, miksi ja mitä oikeuksia sinulla on.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#E6E8EC">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2314161A'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23FF4F1F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --studio: #E6E8EC; --studio-2: #F3F4F6; --ink: #14161A; --orange: #FF4F1F; --white: #fff;
+    --muted: #5E636E; --line: rgba(20,22,26,0.12); --wrap: 800px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { font-family: "Familjen Grotesk", system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: var(--ink); background: var(--studio); -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 1.5rem; }
+
+  .site-header { position: sticky; top: 0; z-index: 10; background: rgba(230,232,236,0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .site-header .wrap { max-width: 1240px; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { font-weight: 700; font-size: 1.35rem; letter-spacing: -0.04em; text-decoration: none; display: inline-flex; align-items: center; gap: 0.45rem; }
+  .logo i { width: 12px; height: 12px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 0 rgba(255,79,31,0.5); animation: pulse 2.4s ease-out infinite; }
+  @keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(255,79,31,0); } 100% { box-shadow: 0 0 0 0 rgba(255,79,31,0); } }
+  @media (prefers-reduced-motion: reduce) { .logo i { animation: none; } }
+  .back { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 0.5rem 1rem; border-radius: 99px; background: var(--ink); color: #fff; }
+  .back:hover { background: var(--orange); }
+
+  main { padding: 3.5rem 0 5rem; }
+  h1 { font-weight: 700; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 0.98; letter-spacing: -0.05em; margin-bottom: 0.8rem; }
+  .updated { color: var(--muted); margin-bottom: 2.5rem; }
+  h2 { font-weight: 700; font-size: 1.35rem; letter-spacing: -0.03em; margin: 2.5rem 0 0.6rem; }
+  h2 span { color: var(--orange); margin-right: 0.4rem; }
+  p + p { margin-top: 0.8rem; }
+  ul { margin: 0.7rem 0 0 1.2rem; }
+  li { margin-bottom: 0.35rem; }
+  .card { background: var(--white); border-radius: 20px; padding: 1.5rem; margin-top: 1rem; }
+  .card p + p { margin-top: 0.5rem; }
+  .card a { font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; margin-top: 1rem; background: var(--white); border-radius: 16px; overflow: hidden; }
+  th, td { text-align: left; padding: 0.85rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 0.98rem; }
+  th { font-weight: 700; background: var(--studio-2); }
+  tr:last-child td { border-bottom: 0; }
+  .toc { background: var(--white); border-radius: 20px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+  .toc ol { margin-left: 1.2rem; }
+  .toc a { text-decoration: none; }
+  .toc a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+  .site-footer { background: var(--ink); color: rgba(255,255,255,0.5); }
+  .site-footer .wrap { max-width: 1240px; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-top: 1.75rem; padding-bottom: 1.75rem; font-size: 0.95rem; }
+  .site-footer a { color: rgba(255,255,255,0.75); }
+
+  @media (max-width: 620px) {
+    main { padding: 2.5rem 0 4rem; }
+    table, thead, tbody, th, td, tr { display: block; }
+    thead { display: none; }
+    td { border: 0; padding: 0.2rem 1rem; }
+    tr { border-bottom: 1px solid var(--line); padding: 0.8rem 0; }
+    td::before { content: attr(data-l); display: block; font-weight: 700; font-size: 0.85rem; color: var(--muted); }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><i aria-hidden="true"></i>hunmedia</a>
+    <a href="index.html" class="back">Takaisin etusivulle</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Tietosuojaseloste</h1>
+    <p class="updated">Päivitetty 12.9.2026</p>
+
+    <p>Tässä selosteessa kerrotaan, mitä henkilötietoja Hunmedia Oy kerää verkkosivuillaan, mihin tietoja käytetään ja mitä oikeuksia sinulla on. Seloste perustuu EU:n yleiseen tietosuoja-asetukseen (GDPR).</p>
+
+    <nav class="toc" aria-label="Sisällys">
+      <ol>
+        <li><a href="#rekisterinpitaja">Rekisterinpitäjä</a></li>
+        <li><a href="#tiedot">Mitä tietoja keräämme</a></li>
+        <li><a href="#peruste">Miksi ja millä perusteella</a></li>
+        <li><a href="#sailytys">Kuinka kauan tietoja säilytetään</a></li>
+        <li><a href="#luovutus">Kenelle tietoja luovutetaan</a></li>
+        <li><a href="#evasteet">Evästeet ja ulkopuoliset palvelut</a></li>
+        <li><a href="#turva">Tietojen suojaaminen</a></li>
+        <li><a href="#oikeudet">Sinun oikeutesi</a></li>
+        <li><a href="#muutokset">Muutokset selosteeseen</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="rekisterinpitaja"><span>1.</span>Rekisterinpitäjä</h2>
+    <div class="card">
+      <p><strong>Hunmedia Oy</strong></p>
+      <p>Y-tunnus: 1234567-8</p>
+      <p>Sähköposti: <a href="mailto:info@hunmedia.fi">info@hunmedia.fi</a></p>
+      <p>Puhelin: <a href="tel:+358401234567">040 123 4567</a></p>
+      <p>Tietosuoja-asioissa sinua palvelee Elias Vilokkinen.</p>
+    </div>
+
+    <h2 id="tiedot"><span>2.</span>Mitä tietoja keräämme</h2>
+    <p>Keräämme vain ne tiedot, jotka annat meille itse yhteydenottolomakkeella tai ottaessasi meihin yhteyttä sähköpostitse tai puhelimitse.</p>
+    <table>
+      <thead><tr><th>Tieto</th><th>Pakollinen</th><th>Mihin sitä tarvitaan</th></tr></thead>
+      <tbody>
+        <tr><td data-l="Tieto">Nimi</td><td data-l="Pakollinen">Kyllä</td><td data-l="Mihin">Jotta tiedämme, kenelle vastaamme</td></tr>
+        <tr><td data-l="Tieto">Sähköpostiosoite</td><td data-l="Pakollinen">Kyllä</td><td data-l="Mihin">Vastauksen lähettämiseen</td></tr>
+        <tr><td data-l="Tieto">Yritys</td><td data-l="Pakollinen">Ei</td><td data-l="Mihin">Tarjouksen laatimiseen</td></tr>
+        <tr><td data-l="Tieto">Puhelinnumero</td><td data-l="Pakollinen">Ei</td><td data-l="Mihin">Jos haluat, että soitamme</td></tr>
+        <tr><td data-l="Tieto">Viestin sisältö</td><td data-l="Pakollinen">Ei</td><td data-l="Mihin">Tarpeesi ymmärtämiseen</td></tr>
+      </tbody>
+    </table>
+    <p>Emme kerää sivustolla kävijäseurantaa, emmekä käytä analytiikka- tai mainostyökaluja. Emme myöskään kerää arkaluonteisia tietoja.</p>
+
+    <h2 id="peruste"><span>3.</span>Miksi ja millä perusteella käsittelemme tietoja</h2>
+    <p>Käsittelemme tietojasi, jotta voimme vastata yhteydenottoosi, laatia tarjouksen ja hoitaa mahdollisen asiakassuhteen.</p>
+    <ul>
+      <li><strong>Yhteydenotot ja tarjoukset:</strong> käsittelyn perusteena on sopimuksen valmistelu pyynnöstäsi.</li>
+      <li><strong>Asiakassuhteen hoito:</strong> perusteena on sopimus kanssasi.</li>
+      <li><strong>Kirjanpito ja laskutus:</strong> perusteena on lakisääteinen velvoitteemme.</li>
+    </ul>
+    <p>Emme lähetä markkinointiviestejä ilman lupaasi emmekä myy tai vuokraa tietojasi kenellekään.</p>
+
+    <h2 id="sailytys"><span>4.</span>Kuinka kauan tietoja säilytetään</h2>
+    <ul>
+      <li><strong>Yhteydenotot, joista ei synny asiakkuutta:</strong> enintään 12 kuukautta, minkä jälkeen viesti poistetaan.</li>
+      <li><strong>Asiakastiedot:</strong> asiakassuhteen ajan ja kaksi vuotta sen päättymisestä.</li>
+      <li><strong>Laskut ja kirjanpitoaineisto:</strong> kirjanpitolain edellyttämät kuusi vuotta.</li>
+    </ul>
+
+    <h2 id="luovutus"><span>5.</span>Kenelle tietoja luovutetaan</h2>
+    <p>Emme luovuta tietojasi ulkopuolisille markkinointitarkoituksiin. Tietoja käsittelevät puolestamme vain seuraavat palveluntarjoajat, joiden kanssa meillä on sopimus tietojen käsittelystä:</p>
+    <ul>
+      <li>sähköpostipalvelun tarjoaja, jonka kautta viestisi kulkee</li>
+      <li>lomakepalvelun tarjoaja, joka välittää lomakkeen viestin meille</li>
+      <li>kirjanpitäjä, jos sinusta tulee asiakas</li>
+    </ul>
+    <p>Tietoja ei siirretä EU:n tai ETA:n ulkopuolelle, ellei palveluntarjoaja käytä palvelimia niiden ulkopuolella. Tällöin siirto tehdään EU:n komission hyväksymiä vakiolausekkeita käyttäen. Voimme luovuttaa tietoja viranomaiselle, jos laki siihen velvoittaa.</p>
+
+    <h2 id="evasteet"><span>6.</span>Evästeet ja ulkopuoliset palvelut</h2>
+    <p>Sivustomme ei käytä seuranta- tai markkinointievästeitä, joten sivulla ei myöskään kysytä evästesuostumusta.</p>
+    <p>Sivuston kirjasin ladataan Google Fonts -palvelusta. Tällöin selaimesi ottaa yhteyden Googlen palvelimeen, joka näkee IP-osoitteesi. Emme saa tätä tietoa itsellemme emmekä käytä sitä mihinkään.</p>
+    <p>Sivuilla on linkkejä asiakkaidemme sivustoille. Näillä sivustoilla pätevät niiden omat tietosuojakäytännöt.</p>
+
+    <h2 id="turva"><span>7.</span>Tietojen suojaaminen</h2>
+    <p>Sivusto käyttää salattua yhteyttä (HTTPS). Tietoihin pääsevät käsiksi vain Hunmedia Oy:n kaksi omistajaa, ja tunnukset on suojattu vahvoilla salasanoilla ja kaksivaiheisella tunnistautumisella. Emme säilytä asiakastietoja paperilla.</p>
+
+    <h2 id="oikeudet"><span>8.</span>Sinun oikeutesi</h2>
+    <p>Sinulla on oikeus</p>
+    <ul>
+      <li>saada tietää, mitä tietoja sinusta on tallennettu</li>
+      <li>saada virheelliset tiedot oikaistuksi</li>
+      <li>pyytää tietojesi poistamista</li>
+      <li>rajoittaa tai vastustaa tietojesi käsittelyä</li>
+      <li>saada antamasi tiedot siirrettävässä muodossa</li>
+      <li>peruuttaa antamasi suostumus milloin tahansa</li>
+    </ul>
+    <p>Pyynnön voi tehdä sähköpostitse osoitteeseen <a href="mailto:info@hunmedia.fi">info@hunmedia.fi</a>. Vastaamme kuukauden kuluessa. Voimme pyytää sinua todistamaan henkilöllisyytesi, ettei tietoja luovuteta väärälle henkilölle.</p>
+    <div class="card">
+      <p><strong>Jos et ole tyytyväinen</strong></p>
+      <p>Voit tehdä valituksen tietosuojavaltuutetun toimistolle: <a href="https://tietosuoja.fi" target="_blank" rel="noopener">tietosuoja.fi</a></p>
+    </div>
+
+    <h2 id="muutokset"><span>9.</span>Muutokset selosteeseen</h2>
+    <p>Voimme päivittää tätä selostetta, jos palvelumme tai lainsäädäntö muuttuu. Viimeisin päivityspäivä näkyy sivun yläreunassa.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Hunmedia Oy, Y-tunnus 1234567-8</span>
+    <span><a href="index.html">Etusivu</a></span>
+    <span>© 2026 Hunmedia Oy</span>
+  </div>
+</footer>
+
+</body>
+</html>
